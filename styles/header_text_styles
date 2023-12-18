@@ -1,0 +1,35 @@
+/* header_text_styles.css */
+/* header_text_styles.css */
+.header {
+  display: flex;
+  justify-content: space-between; /* Aligns items to both ends */
+  align-items: center; /* Aligns items vertically in the center */
+}
+
+.header h1 {
+  margin-right: auto; /* Pushes the ul to the right */
+}
+
+.header nav ul.header-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Display list items in a row */
+}
+
+.header nav ul.header-links li {
+  margin-left: 100px; /* Adjust the spacing between list items if needed */
+}
+.popover li {
+  display: flex;
+  align-items: center;
+}
+
+.popover li img {
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.popover li ul {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,63 @@
+/* Move the search bar to the right */
+.filters {
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+}
+
+/* Adjust specific elements within .filters */
+.filters select#locations-dropdown {
+  margin-right: 30px; /* Add space between the elements */
+}
+
+/* Increase size and style of the search button */
+.filters button[title="search button"] {
+  padding: 5px 24px; /* Adjust padding to increase button size */
+  font-size: 30px; /* Increase font size */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #ff4800; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none; /* Remove button border */
+  cursor: pointer; /* Show pointer cursor on hover */
+  transition: background-color 0.3s ease-in-out; /* Smooth background color transition */
+
+  /* Add more styles if needed */
+}
+
+/* Hover effect for the button */
+.filters button[title="search button"]:hover {
+  background-color: #b34500; /* Darker color on hover */
+}
+/* Styles to center the filter container with margins */
+/* Target the h3 inside .locations and adjust font size */
+.locations h3 {
+  font-size: 50px;
+
+  /* Change the font size to your desired value */
+}
+/* Example positioning for the filter container */
+.filter-container {
+  position: absolute; /* Positioning context */
+  margin-top: 50px;
+  top: 50px; /* Adjust top position as needed */
+  left: 60%; /* Position it horizontally centered */
+  transform: translateX(-50%);
+  max-width: 90%;
+  width: auto; /* Center horizontally based on container width */
+}
+.main-container {
+  display: flex;
+}
+.property-info {
+  margin-left: 10px;
+  margin-right: 60px;
+}
+.main-container {
+  display: flex;
+  align-items: flex-start; /* Align items at the top */
+}
+
+.property-info {
+  /* Style for the new container with property information */
+  /* Add your styles here */
+  margin-left: 30px; /* Adjust margin as needed to align with the image */
+}

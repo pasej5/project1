@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">    
+    <meta charset="utf-8" />
+    <title>RentVista</title>
+    <link rel="stylesheet" type="text/css" href="styles/header.css" />
+    <link rel="stylesheet" type="text/css" href="styles/filters.css" />
+    <link rel="stylesheet" type="text/css" href="styles/footer.css" />
+    <link rel="stylesheet" type="text/css" href="header_text_styles.css" />
+    <link rel="shortcut icon" href="../images/icon.png" />
+  </head>
+
+  <body>
+    <header
+      class="header"
+      style="
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      "
+    >
+      <div class="header-content">
+        <h1>Welcome to RentVista</h1>
+        <nav style="align-self: flex-start">
+          <ul
+            class="header-links"
+            style="list-style: none; padding: 0; margin: 0; display: flex"
+          >
+            <li style="margin-left: 15px"><a href="#">For Sale</a></li>
+            <li style="margin-left: 15px"><a href="#">To Rent</a></li>
+            <li style="margin-left: 15px"><a href="#">Developments</a></li>
+            <li style="margin-left: 15px"><a href="#">Home</a></li>
+            <li style="margin-left: 15px"><a href="#">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <section class="filters" title="Search Bar">
+        <label for="locations-dropdown">Locations:</label>
+        <select id="locations-dropdown">
+          <option value="johannesburg">Johannesburg</option>
+          <option value="abuja">Abuja</option>
+        </select>
+        <button title="search button">Search</button>
+      </section>
+
+      <div class="filter-container">
+        <label for="property-type">Property Type:</label>
+        <select id="property-type">
+          <option value="any">Any</option>
+        </select>
+
+        <label for="min-price">Min Price:</label>
+        <select id="min-price">
+          <option value="any">Any</option>
+        </select>
+
+        <label for="max-price">Max Price:</label>
+        <select id="max-price">
+          <option value="any">Any</option>
+        </select>
+
+        <label for="bedrooms">Bedrooms:</label>
+        <select id="bedrooms">
+          <option value="any">Any</option>
+        </select>
+      </div>
+
+      <div class="locations" role="menu">
+        <h3>Properties for sale - Johannesburg</h3>
+        <h4>State (Gauteng, Limpopo....)</h4>
+        <ul class="popover">
+          <li>
+            <h2>All areas in Johannesburg</h2>
+            <img src="images/johannesburg.jpeg" alt="Johannesburg Image" />
+          </li>
+          <p>
+            <li class="price-below">Price Below R1 000 000</li>
+            <li class="price-above">Price Above R1 000 000</li>
+          </p>
+        </ul>
+
+        
+      </div>
+
+      <div class="locations" role="menu">
+        <h3>Properties for sale - Abuja</h3>
+        <h4>State (Nigerian State....)</h4>
+        <ul class="popover">
+          <li>
+            <h2>All areas in Abuja</h2>
+            <img src="images/house image1.webp" alt="Abuja Image" />
+          </li>
+          <p>
+            <li class="price-below">Price Below R1 000 000</li>
+            <li class="price-above">Price Above R1 000 000</li>
+          </p>
+        </ul>
+
+        
+
+      <section class="Johannesburg" role="contentinfo">
+        <!-- Content specific to Johannesburg -->
+      </section>
+    </div>
+    <footer>
+      <p>Welcome Home! Discover your perfect place with us</p>
+    </footer>
+  </body>
+</html>
