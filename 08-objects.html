@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>functions</title>
+    <title>Objects</title>
   </head>
   <body>
     <script>
+      /*
       const product = {
         name: "sock",
         price: 1090,
@@ -23,6 +24,37 @@
       delete product.newProperty;
       console.log(product);
       console.log(typeof product);
+      console.log(typeof console.log);
+      console.log(typeof Math.random);
+
+      console.log(JSON.stringify(product));
+
+      const jsonString = JSON.stringify(product);
+      JSON.parse(jsonString);
+      console.log(JSON.parse(jsonString));
+      */
+
+      const product2 = {
+        name: "shirt",
+        "delivery-time": "1 day",
+        rating: {
+          stars: 4.4,
+          count: 87,
+        },
+        fun: function function1() {
+          console.log("Function inside an object");
+        },
+      };
+      console.log(product2);
+      console.log(product2.name);
+      console.log(product2["name"]);
+      console.log(product2["delivery-time"]);
+      console.log(product2.rating.stars);
+      product2.fun();
+
+      console.log(JSON.stringify(product2));
+      const jsonString = JSON.stringify(product2);
+      console.log(JSON.parse(jsonString));
     </script>
   </body>
 </html>
