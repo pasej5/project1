@@ -1,0 +1,1856 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="" />
+    <meta name="google" content="notranslate" />
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      dataLayer.push({
+        userId: 345218,
+        visitorType: 'student',
+        batch: {
+          id: 78,
+          fullNameWithC: 'JNB-0223 (C#13)',
+          schoolLocation: { id: 5, name: 'Johannesburg' },
+        },
+        curriculum: { id: 17, name: 'Short Specializations' },
+      });
+
+      window.gtm_user_custom_event = function (name, options) {
+        if (typeof name === 'undefined') {
+          return;
+        }
+
+        window.dataLayer.push({
+          customEventOptions: typeof options !== 'undefined' ? options : {},
+          event: name,
+        });
+      };
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-N4C8MF2');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <title>My profile | Johannesburg Intranet</title>
+
+    <link rel="stylesheet" href="https://use.typekit.net/xgz4ilr.css" />
+    <link
+      rel="stylesheet"
+      media="all"
+      href="/assets/application_alx-42f25473a01386db8cf1b6a39c720f51053c958623a609b5b1524927abd61549.css"
+    />
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="/assets/application-e108fb75f939d72d47f0e99c7163aee8c5572427c1e62e5b50334df42d03f2d3.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon_alx.ico" />
+    <meta name="csrf-param" content="authenticity_token" />
+    <meta
+      name="csrf-token"
+      content="2Dc1qKpEcZ_1u_VdpQBQkXPtIdXW7F4hQ8BEYo95eYqIeVy0PLBJ6ets5zSP-nKF5qG9iJ9g0h6yRO87POHkMA"
+    />
+
+    <link rel="apple-touch-icon" href="/apple-touch-icon_alx.png" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Store user timezone -->
+    <script>
+      Cookies.set('timezone', new Date().getTimezoneOffset() / -60.0);
+    </script>
+
+    <!-- intro.js for interactive onboarding -->
+
+    <!-- React -->
+    <script src="/packs/js/application-c9e88dafb112ccf51f08.js"></script>
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="/packs/css/application-87456da7.css"
+    />
+  </head>
+
+  <body
+    class="signed_in env_production notranslate"
+    translate="no"
+    class="notranslate"
+    data-theme-suffix="_alx"
+  >
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-N4C8MF2"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <input
+      type="hidden"
+      id="hbtn-slack-url"
+      value="https://alx-students.slack.com"
+    />
+    <nav class="navbar navbar-default navbar-fixed-top topbar visible-xs">
+      <div class="navbar-header">
+        <button
+          type="button"
+          class="navbar-toggle collapsed"
+          data-toggle="collapse"
+          data-target="#navbar-mobile"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a class="navbar-brand" href="/">
+          <div class="logo"></div>
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse navigation" id="navbar-mobile">
+        <ul class="nav navbar-nav">
+          <li
+            data-container="body"
+            data-placement="right"
+            data-toggle="tooltip"
+            title="My Planning"
+          >
+            <a href="/planning/me"
+              ><div class="icon">
+                <i aria-hidden="true" class="fa-solid fa-calendar"></i>
+              </div>
+              <div class="visible-xs">My Planning</div></a
+            >
+          </li>
+          <li
+            data-container="body"
+            data-placement="right"
+            data-toggle="tooltip"
+            id="sidebar-current-projects-item"
+            title="Projects"
+          >
+            <a href="/projects/current"
+              ><div class="icon">
+                <i aria-hidden="true" class="fa-solid fa-code-fork"></i>
+              </div>
+              <div class="visible-xs">Projects</div></a
+            >
+          </li>
+          <li
+            data-container="body"
+            data-placement="right"
+            data-toggle="tooltip"
+            title="QA Reviews I can make"
+          >
+            <a href="/corrections/to_review"
+              ><div class="icon">
+                <i aria-hidden="true" class="fa-solid fa-check"></i>
+              </div>
+              <div class="visible-xs">QA Reviews I can make</div></a
+            >
+          </li>
+
+          <li
+            data-container="body"
+            data-placement="right"
+            data-toggle="tooltip"
+            title="Evaluation quizzes"
+          >
+            <a href="/dashboards/my_current_evaluation_quizzes"
+              ><div class="icon">
+                <i aria-hidden="true" class="fa-solid fa-question"></i>
+              </div>
+              <div class="visible-xs">Evaluation quizzes</div></a
+            >
+          </li>
+
+          <hr title="My resources" />
+
+          <li
+            data-container="body"
+            data-placement="right"
+            data-toggle="tooltip"
+            title="Curriculums"
+          >
+            <a href="/dashboards/my_curriculums"
+              ><div class="icon">
+                <i aria-hidden="true" class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="visible-xs">Curriculums</div></a
+            >
+          </li>
+          <li
+            data-container="body"
+            data-placement="right"
+            data-toggle="tooltip"
+            id="sidebar-concepts-item"
+            title="Concepts"
+          >
+            <a href="/concepts"
+              ><div class="icon">
+                <i aria-hidden="true" class="fa-solid fa-file-text"></i>
+              </div>
+              <div class="visible-xs">Concepts</div></a
+            >
+          </li>
+          <li
+            data-container="body"
+            data-placement="right"
+            data-toggle="tooltip"
+            id="sidebar-dashboards-video-rooms"
+            title="Conference rooms"
+          >
+            <a href="/dashboards/video_rooms"
+              ><div class="icon">
+                <i aria-hidden="true" class="fa-solid fa-comments"></i>
+              </div>
+              <div class="visible-xs">Conference rooms</div></a
+            >
+          </li>
+          <li
+            data-container="body"
+            data-placement="right"
+            data-toggle="tooltip"
+            title="Servers"
+          >
+            <a href="/servers"
+              ><div class="icon">
+                <i aria-hidden="true" class="fa-solid fa-server"></i>
+              </div>
+              <div class="visible-xs">Servers</div></a
+            >
+          </li>
+          <li
+            data-container="body"
+            data-placement="right"
+            data-toggle="tooltip"
+            id="sidebar-dashboards-my-containers"
+            title="Sandboxes"
+          >
+            <a href="/user_containers/current"
+              ><div class="icon">
+                <i aria-hidden="true" class="fa-solid fa-terminal"></i>
+              </div>
+              <div class="visible-xs">Sandboxes</div></a
+            >
+          </li>
+          <li
+            data-container="body"
+            data-placement="right"
+            data-toggle="tooltip"
+            title="Tools"
+          >
+            <a href="/dashboards/my_tools"
+              ><div class="icon">
+                <i aria-hidden="true" class="fa-solid fa-wrench"></i>
+              </div>
+              <div class="visible-xs">Tools</div></a
+            >
+          </li>
+          <li
+            data-container="body"
+            data-placement="right"
+            data-toggle="tooltip"
+            title="Video on demand"
+          >
+            <a href="/dashboards/videos"
+              ><div class="icon">
+                <i aria-hidden="true" class="fa-solid fa-film"></i>
+              </div>
+              <div class="visible-xs">Video on demand</div></a
+            >
+          </li>
+
+          <hr title="My campus" />
+
+          <li
+            data-container="body"
+            data-placement="right"
+            data-toggle="tooltip"
+            title="Peers"
+          >
+            <a href="/users/peers"
+              ><div class="icon">
+                <i aria-hidden="true" class="fa-solid fa-users"></i>
+              </div>
+              <div class="visible-xs">Peers</div></a
+            >
+          </li>
+          <li
+            data-container="body"
+            data-placement="right"
+            data-toggle="tooltip"
+            title="Captain&#39;s Logs"
+          >
+            <a href="/dashboards/my_captain_log"
+              ><div class="icon">
+                <i aria-hidden="true" class="fa-solid fa-book"></i>
+              </div>
+              <div class="visible-xs">Captain&#39;s Logs</div></a
+            >
+          </li>
+
+          <hr class="visible-xs" />
+
+          <li>
+            <div
+              data-container="body"
+              data-placement="right"
+              data-toggle="tooltip"
+              title="Discord"
+            >
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://discord.com/app"
+              >
+                <div class="icon discord">
+                  <i aria-hidden="true" class="fa-brands fa-discord"></i>
+                </div>
+                <div class="visible-xs">Discord</div>
+              </a>
+            </div>
+
+            <div
+              data-container="body"
+              data-placement="right"
+              data-toggle="tooltip"
+              title="My Profile"
+            >
+              <a href="/users/my_profile">
+                <div class="image active">
+                  <div
+                    class="inner"
+                    style="
+                      background-image: url('https://s3.amazonaws.com/alx-intranet.hbtn.io/users/photos/000/345/218/thumb/307654789_5535218353226830_5719431009626038776_n.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240309%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20240309T232646Z&amp;X-Amz-Expires=600&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=18e77f2a8b8bdae30dcdf1e199a5b4de1c03c6d081f8df46f0fe069e72dada38');
+                    "
+                  ></div>
+                </div>
+
+                <div class="visible-xs">My Profile</div>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="hidden-xs navigation sidebar">
+      <a class="logo-container" href="/">
+        <div class="logo"></div>
+      </a>
+      <ul>
+        <li
+          data-container="body"
+          data-placement="right"
+          data-toggle="tooltip"
+          title="My Planning"
+        >
+          <a href="/planning/me"
+            ><div class="icon">
+              <i aria-hidden="true" class="fa-solid fa-calendar"></i>
+            </div>
+            <div class="visible-xs">My Planning</div></a
+          >
+        </li>
+        <li
+          data-container="body"
+          data-placement="right"
+          data-toggle="tooltip"
+          id="sidebar-current-projects-item"
+          title="Projects"
+        >
+          <a href="/projects/current"
+            ><div class="icon">
+              <i aria-hidden="true" class="fa-solid fa-code-fork"></i>
+            </div>
+            <div class="visible-xs">Projects</div></a
+          >
+        </li>
+        <li
+          data-container="body"
+          data-placement="right"
+          data-toggle="tooltip"
+          title="QA Reviews I can make"
+        >
+          <a href="/corrections/to_review"
+            ><div class="icon">
+              <i aria-hidden="true" class="fa-solid fa-check"></i>
+            </div>
+            <div class="visible-xs">QA Reviews I can make</div></a
+          >
+        </li>
+
+        <li
+          data-container="body"
+          data-placement="right"
+          data-toggle="tooltip"
+          title="Evaluation quizzes"
+        >
+          <a href="/dashboards/my_current_evaluation_quizzes"
+            ><div class="icon">
+              <i aria-hidden="true" class="fa-solid fa-question"></i>
+            </div>
+            <div class="visible-xs">Evaluation quizzes</div></a
+          >
+        </li>
+
+        <hr title="My resources" />
+
+        <li
+          data-container="body"
+          data-placement="right"
+          data-toggle="tooltip"
+          title="Curriculums"
+        >
+          <a href="/dashboards/my_curriculums"
+            ><div class="icon">
+              <i aria-hidden="true" class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="visible-xs">Curriculums</div></a
+          >
+        </li>
+        <li
+          data-container="body"
+          data-placement="right"
+          data-toggle="tooltip"
+          id="sidebar-concepts-item"
+          title="Concepts"
+        >
+          <a href="/concepts"
+            ><div class="icon">
+              <i aria-hidden="true" class="fa-solid fa-file-text"></i>
+            </div>
+            <div class="visible-xs">Concepts</div></a
+          >
+        </li>
+        <li
+          data-container="body"
+          data-placement="right"
+          data-toggle="tooltip"
+          id="sidebar-dashboards-video-rooms"
+          title="Conference rooms"
+        >
+          <a href="/dashboards/video_rooms"
+            ><div class="icon">
+              <i aria-hidden="true" class="fa-solid fa-comments"></i>
+            </div>
+            <div class="visible-xs">Conference rooms</div></a
+          >
+        </li>
+        <li
+          data-container="body"
+          data-placement="right"
+          data-toggle="tooltip"
+          title="Servers"
+        >
+          <a href="/servers"
+            ><div class="icon">
+              <i aria-hidden="true" class="fa-solid fa-server"></i>
+            </div>
+            <div class="visible-xs">Servers</div></a
+          >
+        </li>
+        <li
+          data-container="body"
+          data-placement="right"
+          data-toggle="tooltip"
+          id="sidebar-dashboards-my-containers"
+          title="Sandboxes"
+        >
+          <a href="/user_containers/current"
+            ><div class="icon">
+              <i aria-hidden="true" class="fa-solid fa-terminal"></i>
+            </div>
+            <div class="visible-xs">Sandboxes</div></a
+          >
+        </li>
+        <li
+          data-container="body"
+          data-placement="right"
+          data-toggle="tooltip"
+          title="Tools"
+        >
+          <a href="/dashboards/my_tools"
+            ><div class="icon">
+              <i aria-hidden="true" class="fa-solid fa-wrench"></i>
+            </div>
+            <div class="visible-xs">Tools</div></a
+          >
+        </li>
+        <li
+          data-container="body"
+          data-placement="right"
+          data-toggle="tooltip"
+          title="Video on demand"
+        >
+          <a href="/dashboards/videos"
+            ><div class="icon">
+              <i aria-hidden="true" class="fa-solid fa-film"></i>
+            </div>
+            <div class="visible-xs">Video on demand</div></a
+          >
+        </li>
+
+        <hr title="My campus" />
+
+        <li
+          data-container="body"
+          data-placement="right"
+          data-toggle="tooltip"
+          title="Peers"
+        >
+          <a href="/users/peers"
+            ><div class="icon">
+              <i aria-hidden="true" class="fa-solid fa-users"></i>
+            </div>
+            <div class="visible-xs">Peers</div></a
+          >
+        </li>
+        <li
+          data-container="body"
+          data-placement="right"
+          data-toggle="tooltip"
+          title="Captain&#39;s Logs"
+        >
+          <a href="/dashboards/my_captain_log"
+            ><div class="icon">
+              <i aria-hidden="true" class="fa-solid fa-book"></i>
+            </div>
+            <div class="visible-xs">Captain&#39;s Logs</div></a
+          >
+        </li>
+
+        <hr class="visible-xs" />
+
+        <li>
+          <div
+            data-container="body"
+            data-placement="right"
+            data-toggle="tooltip"
+            title="Discord"
+          >
+            <a rel="noreferrer" target="_blank" href="https://discord.com/app">
+              <div class="icon discord">
+                <i aria-hidden="true" class="fa-brands fa-discord"></i>
+              </div>
+              <div class="visible-xs">Discord</div>
+            </a>
+          </div>
+
+          <div
+            data-container="body"
+            data-placement="right"
+            data-toggle="tooltip"
+            title="My Profile"
+          >
+            <a href="/users/my_profile">
+              <div class="image active">
+                <div
+                  class="inner"
+                  style="
+                    background-image: url('https://s3.amazonaws.com/alx-intranet.hbtn.io/users/photos/000/345/218/thumb/307654789_5535218353226830_5719431009626038776_n.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240309%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20240309T232646Z&amp;X-Amz-Expires=600&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=18e77f2a8b8bdae30dcdf1e199a5b4de1c03c6d081f8df46f0fe069e72dada38');
+                  "
+                ></div>
+              </div>
+
+              <div class="visible-xs">My Profile</div>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <main>
+      <div id="layout-bars">
+        <div class="px-5 py-3" id="student-switch-curriculum">
+          <div class="dropdown d-flex flex-column gap-1">
+            <span class="fs-small text-muted">Curriculum</span>
+
+            <div
+              aria-haspopup="true"
+              aria-expanded="false"
+              class="align-items-center d-flex gap-3"
+              data-toggle="dropdown"
+              id="student-switch-curriculum-dropdown"
+              role="button"
+            >
+              <div class="d-flex flex-column" style="line-height: 16px">
+                <span class="fs-4 fw-600"> Short Specializations </span>
+                <span class="fs-small text-muted">
+                  Average: <span class="fw-500">99.73%</span>
+                </span>
+              </div>
+
+              <div class="d-flex flex-column justify-content-center">
+                <span style="margin-bottom: -4px">
+                  <i aria-hidden="true" class="fa-solid fa-angle-up fa-fw"></i>
+                </span>
+                <span style="margin-top: -4px">
+                  <i
+                    aria-hidden="true"
+                    class="fa-solid fa-angle-down fa-fw"
+                  ></i>
+                </span>
+              </div>
+            </div>
+
+            <ul
+              aria-labelledby="student-switch-curriculum-dropdown"
+              class="dropdown-menu fs-5"
+            >
+              <li>
+                <a href="/curriculums/17/observe">
+                  <div class="align-items-center d-flex py-2">
+                    <div class="d-flex flex-column" style="line-height: 16px">
+                      <span class="fs-4 fw-500"> Short Specializations </span>
+                      <span class="text-muted">
+                        Average: <span class="fw-500">99.73%</span>
+                      </span>
+                    </div>
+
+                    <span class="fw-600 text-info" style="margin-left: 42px">
+                      <i aria-hidden="true" class="fa-solid fa-check"></i>
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="/curriculums/1/observe">
+                  <div class="align-items-center d-flex py-2">
+                    <div class="d-flex flex-column" style="line-height: 16px">
+                      <span class="fs-4 fw-500"> SE Foundations </span>
+                      <span class="text-muted">
+                        Average: <span class="fw-500">108.27%</span>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="captains_log_alert">
+          <a href="/captain_logs/4846126/edit">
+            <div>
+              You have a captain's log due before 2024-03-10 (in about 12
+              hours)! Log it now!
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <article class="pending_logs">
+        <h1>My profile</h1>
+
+        <h2 class="gap">Edit your profile</h2>
+
+        <form
+          class="form-horizontal gap"
+          id="edit_user_345218"
+          enctype="multipart/form-data"
+          action="/users/self_update"
+          accept-charset="UTF-8"
+          method="post"
+        >
+          <input
+            type="hidden"
+            name="_method"
+            value="patch"
+            autocomplete="off"
+          /><input
+            type="hidden"
+            name="authenticity_token"
+            value="XiMx8K4GAyavVsi4db5pRlWg1xiFYHSzDkm-O8_o7uuiruFY9QUmQ67EXN2Ca2J7gPf39VTHhxMlOUiHu16XBQ"
+            autocomplete="off"
+          />
+
+          <div class="row" style="margin-bottom: 5px">
+            <div class="col-sm-10 col-sm-offset-2">
+              <img
+                src="https://s3.amazonaws.com/alx-intranet.hbtn.io/users/photos/000/345/218/thumb/307654789_5535218353226830_5719431009626038776_n.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240309%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20240309T232646Z&amp;X-Amz-Expires=600&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=18e77f2a8b8bdae30dcdf1e199a5b4de1c03c6d081f8df46f0fe069e72dada38"
+                width="100"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-sm-2 control-label mandatory" for="user_photo"
+              >Photo</label
+            >
+            <div class="col-sm-10">
+              <input
+                class="form-control file-size-validation"
+                data-file-size="2097152"
+                accept="image/png,image/jpeg"
+                type="file"
+                name="user[photo]"
+                id="user_photo"
+              />
+              <p class="help-block">
+                Please upload a <strong>square-shaped</strong> picture. Max 2MB.
+                Formats allowed: <code>jpg</code>, <code>png</code> and
+                <code>gif</code>
+              </p>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="form-group gap">
+            <label class="col-sm-2 control-label mandatory" for="user_Discord"
+              >Discord</label
+            >
+            <div class="col-sm-10">
+              <div class="hstack gap-5">
+                <div class="hstack gap-2">
+                  <img
+                    class="rounded-circle"
+                    style="height: 32px; width: 32px"
+                    src="https://cdn.discordapp.com/embed/avatars/4.png"
+                  />
+                  <div
+                    class="vstack gap-1 justify-content-center"
+                    style="flex-grow: 0"
+                  >
+                    <span class="fw-semibold">jealous_31734_56374</span>
+                  </div>
+                </div>
+                <div>
+                  <a
+                    class="btn-link hstack gap-2"
+                    data-confirm="You will be removed from all our Discord servers. Are you sure?"
+                    style="width: fit-content"
+                    rel="nofollow"
+                    data-method="delete"
+                    href="/user_discords/deauthorize"
+                  >
+                    <i aria-hidden="true" class="fa-solid fa-xmark"></i>
+                    <span>Unlink Discord account</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="form-group gap">
+            <label
+              class="col-sm-2 control-label mandatory"
+              for="user_preferred_first_name"
+              >Preferred first name</label
+            >
+            <div class="col-sm-10">
+              <input
+                class="form-control"
+                maxlength="255"
+                size="255"
+                type="text"
+                value="Jealous"
+                name="user[preferred_name]"
+                id="user_preferred_name"
+              />
+              <p class="help-block">How you want others to address you.</p>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="form-group gap">
+            <label class="col-sm-2 control-label" for="user_first_name"
+              >First name</label
+            >
+            <div class="col-sm-10">
+              <input
+                class="form-control"
+                disabled="disabled"
+                maxlength="255"
+                size="255"
+                type="text"
+                value="Jealous"
+                name="user[first_name]"
+                id="user_first_name"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="user_middle_names"
+              >Middle name(s)</label
+            >
+            <div class="col-sm-10">
+              <input
+                class="form-control"
+                disabled="disabled"
+                maxlength="255"
+                size="255"
+                type="text"
+                value="Pasej"
+                name="user[middle_names]"
+                id="user_middle_names"
+              />
+              <p class="help-block">
+                This will not be visible to other learners.
+              </p>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="user_last_name"
+              >Last name</label
+            >
+            <div class="col-sm-10">
+              <input
+                class="form-control"
+                disabled="disabled"
+                maxlength="255"
+                size="255"
+                type="text"
+                value="Matsikachando"
+                name="user[last_name]"
+                id="user_last_name"
+              />
+              <p class="help-block">
+                Please input your <strong>legal</strong> full name. If updates
+                are needed, please ask staff for assistance.
+              </p>
+            </div>
+          </div>
+
+          <hr class="gap" />
+
+          <h2 class="gap">Agreements</h2>
+
+          <div class="form-group">
+            <label class="col-sm-2 control-label">Code of Conduct</label>
+            <div class="col-sm-10" style="padding-top: 7px">
+              Approved on
+              <div
+                data-react-class="common/DateTime"
+                data-react-props='{"showDate":true,"showTime":true,"value":"2023-02-15T19:27:49.391Z"}'
+                data-react-cache-id="common/DateTime-0"
+                class="d-inline-block"
+              ></div>
+              <a href="#" data-toggle="modal" data-target="#agreement_5"
+                >Show Code of Conduct</a
+              >
+              <div id="agreement_5" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">
+                        Johannesburg - Code of Conduct
+                      </h5>
+                      <small
+                        >Effective as of
+                        <div
+                          data-react-class="common/DateTime"
+                          data-react-props='{"showDate":true,"showTime":false,"value":"2022-09-19"}'
+                          data-react-cache-id="common/DateTime-0"
+                          class="d-inline-block"
+                        ></div
+                      ></small>
+                    </div>
+                    <div class="modal-body">
+                      <h2>Code of Conduct</h2>
+
+                      <h3>Introduction</h3>
+
+                      <p>
+                        ALX Africa Programme aims to be a safe training space
+                        for all learners, who can interact and learn without
+                        fearing harassment, prejudice, discrimination and
+                        violation of their intellectual property.
+                      </p>
+
+                      <p>
+                        Signing off this code of conduct will grant you access
+                        to the learning platform you are going to use throughout
+                        your learning journey. You are expected to comply with
+                        the present code of conduct while navigating in both;
+                        failure to do so will result in precise consequences
+                        which may include temporary suspension from either one
+                        of the platforms or forced dismissal from the Programme,
+                        without permission to reapply for the next two years.
+                      </p>
+
+                      <h3>Mission of ALX Africa</h3>
+
+                      <p>
+                        To transform Africa by developing 3 million ethical and
+                        entrepreneurial leaders by 2035.
+                      </p>
+
+                      <h3>Our Pledge</h3>
+
+                      <p>
+                        We as members, contributors, and leaders pledge to make
+                        participation in our community a harassment-free
+                        experience for everyone, regardless of age, body size,
+                        visible or invisible disability, ethnicity, sex
+                        characteristics, gender identity and expression, level
+                        of experience, education, socio-economic status,
+                        nationality, personal appearance, race, caste, color,
+                        religion, or sexual identity and orientation.
+                      </p>
+
+                      <p>
+                        We pledge to act and interact in ways that contribute to
+                        an open, welcoming, diverse, inclusive, and healthy
+                        community.
+                      </p>
+
+                      <h3>Our values</h3>
+
+                      <p><em>Courage Humility Adventure Initiative</em></p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-default"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">Privacy Policy</label>
+            <div class="col-sm-10" style="padding-top: 7px">
+              Approved on
+              <div
+                data-react-class="common/DateTime"
+                data-react-props='{"showDate":true,"showTime":true,"value":"2023-03-09T00:05:08.044Z"}'
+                data-react-cache-id="common/DateTime-0"
+                class="d-inline-block"
+              ></div>
+              <a href="#" data-toggle="modal" data-target="#agreement_13"
+                >Show Privacy Policy</a
+              >
+              <div id="agreement_13" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Johannesburg - Privacy Policy</h5>
+                      <small
+                        >Effective as of
+                        <div
+                          data-react-class="common/DateTime"
+                          data-react-props='{"showDate":true,"showTime":false,"value":"2023-03-09"}'
+                          data-react-cache-id="common/DateTime-0"
+                          class="d-inline-block"
+                        ></div
+                      ></small>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        Thank you for choosing to be part of our community at
+                        African Leadership International, doing business as ALX
+                        (&ldquo;ALX&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;,
+                        or &ldquo;our&rdquo;). ALX is a community of passionate,
+                        courageous &lsquo;doers&rsquo; where we help the
+                        world&rsquo;s top talent to fulfill their potential. At
+                        ALX, young Africans receive best-in-class training to
+                        prepare, launch and grow their career. [young Africans
+                        receive best-in-class training to prepare, launch and
+                        grow their career.]. Our Privacy Policy applies to any
+                        participant of ALX programmes or visitors to the website
+                        or applications operated by ALX.
+                      </p>
+
+                      <p>
+                        We are committed to protecting your personal information
+                        and your right to privacy. If you have any questions or
+                        concerns about our policy, or our practices with regards
+                        to your personal information, please contact us at
+                        support@alx.app.
+                      </p>
+
+                      <p>
+                        When you access our intranet
+                        <a
+                          href="https://intranet.alxswe.com/"
+                          title="https://intranet.alxswe.com/"
+                          target="_blank"
+                          >https://intranet.alxswe.com/</a
+                        >
+                        and use our services, you trust us with your personal
+                        information. We take your privacy very seriously. In
+                        this privacy policy, we seek to explain to you in the
+                        clearest way possible what information we collect, how
+                        we use it and what rights you have in relation to it. We
+                        hope you take some time to read through it carefully, as
+                        it is important. If there are any terms in this privacy
+                        policy that you do not agree with, please discontinue
+                        the use of our Sites and our services.
+                      </p>
+
+                      <p>
+                        This privacy policy applies to all information collected
+                        through our website (such as
+                        <a
+                          href="https://intranet.alxswe.com/"
+                          title="https://intranet.alxswe.com/"
+                          target="_blank"
+                          >https://intranet.alxswe.com/</a
+                        >), and/or any related services, sales, marketing or
+                        events (we refer to them collectively in this privacy
+                        policy as the &ldquo;Services&rdquo;).
+                      </p>
+
+                      <p>
+                        Please read this privacy policy carefully as it will
+                        help you make informed decisions about sharing your
+                        personal information with us.
+                      </p>
+
+                      <h3>1. WHAT INFORMATION DO WE COLLECT?</h3>
+
+                      <p>Personal information you disclose to us</p>
+
+                      <p>
+                        In Short: We collect personal information that you
+                        provide to us.
+                      </p>
+
+                      <p>
+                        We collect personal information that you voluntarily
+                        provide to us when participating in activities on the
+                        Services (such as accessing the Intranet, getting access
+                        to a project, etc.) or otherwise contacting us.
+                      </p>
+
+                      <p>
+                        The personal information that we collect depends on the
+                        context of your interactions with us and the Services,
+                        the choices you make and the products and features you
+                        use. The personal information we collect can include the
+                        following:
+                      </p>
+
+                      <p>
+                        Publicly Available Personal Information. We collect
+                        first name, maiden name, last name, and nickname;
+                        current and former address; phone numbers; email
+                        addresses; business email; business phone number; age
+                        range ; gender ; primary language ; employment status
+                        and other similar data.
+                      </p>
+
+                      <p>
+                        All personal information that you provide to us must be
+                        true, complete and accurate, and you must notify us of
+                        any changes to such personal information.
+                      </p>
+
+                      <h3>2. HOW DO WE USE YOUR INFORMATION?</h3>
+
+                      <p>
+                        In Short: We process your information for purposes based
+                        on legitimate business interests, the fulfillment of our
+                        contract with you, compliance with our legal
+                        obligations, and/or your consent.
+                      </p>
+
+                      <p>
+                        We use personal information collected via our Services
+                        for various business purposes described below. We
+                        process your personal information for these purposes in
+                        reliance on our legitimate business interests, in order
+                        to enter into or perform a contract with you, with your
+                        consent, and/or for compliance with our legal
+                        obligations. We indicate the specific processing grounds
+                        we rely on next to each purpose listed below.
+                      </p>
+
+                      <p>We use the information we collect or receive:</p>
+
+                      <p>
+                        To deliver services to the user. We may use your
+                        information to provide you with the requested service.
+                      </p>
+
+                      <p>
+                        To respond to user inquiries/offer support to users. We
+                        may use your information to respond to your inquiries
+                        and solve any potential issues you might have with the
+                        use of our Services.
+                      </p>
+
+                      <p>
+                        For other Business Purposes. We may use your information
+                        for other Business Purposes, such as data analysis,
+                        identifying usage trends and to evaluate and improve our
+                        Services, products and your experience. We may use and
+                        store this information in aggregated and anonymized form
+                        so that it is not associated with individual end users
+                        and does not include personal information. We will not
+                        use identifiable personal information without your
+                        consent.
+                      </p>
+
+                      <h3>3. WILL YOUR INFORMATION BE SHARED WITH ANYONE?</h3>
+
+                      <p>
+                        In Short: We only share information with your consent,
+                        to comply with laws, to provide you with services, to
+                        protect your rights, or to fulfill business obligations.
+                      </p>
+
+                      <p>
+                        We may process or share data based on the following
+                        legal basis:
+                      </p>
+
+                      <p>
+                        <strong>Consent</strong>: We may process your data if
+                        you have given us specific consent to use your personal
+                        information for a specific purpose.
+                      </p>
+
+                      <p>
+                        <strong>Legitimate Interests</strong>: We may process
+                        your data when it is reasonably necessary to achieve our
+                        legitimate business interests.
+                      </p>
+
+                      <p>
+                        <strong>Performance of a Contract</strong>: Where we
+                        have entered into a contract with you, we may process
+                        your personal information to fulfill the terms of our
+                        contract.
+                      </p>
+
+                      <p>
+                        <strong>Legal Obligations</strong>: We may disclose your
+                        information where we are legally required to do so in
+                        order to comply with applicable law, governmental
+                        requests, a judicial proceeding, court order, or legal
+                        processes, such as in response to a court order or a
+                        subpoena (including in response to public authorities to
+                        meet national security or law enforcement requirements).
+                      </p>
+
+                      <p>
+                        <strong>Vital Interests</strong>: We may disclose your
+                        information where we believe it is necessary to
+                        investigate, prevent, or take action regarding potential
+                        violations of our policies, suspected fraud, situations
+                        involving potential threats to the safety of any person
+                        and illegal activities, or as evidence in litigation in
+                        which we are involved.
+                      </p>
+
+                      <p>
+                        More specifically, we may need to process your data or
+                        share your personal information in the following
+                        situations:
+                      </p>
+
+                      <p>
+                        Vendors, Consultants and Other Third-Party Service
+                        Providers. We may share your data with third-party
+                        vendors, service providers, contractors or agents who
+                        perform services for us or on our behalf and require
+                        access to such information to do that work. Examples
+                        include: data analysis, email delivery, hosting
+                        services, customer service and marketing efforts. We may
+                        allow selected third parties to use tracking technology
+                        on the Services, which will enable them to collect data
+                        about how you interact with the Services over time. This
+                        information may be used to, among other things, analyze
+                        and track data, determine the popularity of certain
+                        content and better understand online activity. Unless
+                        described in this Policy, we do not share, sell, rent or
+                        trade any of your information with third parties for
+                        their promotional purposes.
+                      </p>
+
+                      <p>
+                        Business Transfers. We may share or transfer your
+                        information in connection with, or during negotiations
+                        of, any merger, sale of company assets, financing, or
+                        acquisition of all or a portion of our business to
+                        another company.
+                      </p>
+
+                      <p>
+                        Third-Party Advertisers. We may use third-party
+                        advertising companies to serve ads when you visit the
+                        Services. These companies may use information about your
+                        visits to our Website(s) and other websites that are
+                        contained in web cookies and other tracking technologies
+                        in order to provide advertisements about goods and
+                        services of interest to you.
+                      </p>
+
+                      <p>
+                        Business Partners. We may share your information with
+                        our business partners to offer you certain products,
+                        services or promotions.
+                      </p>
+
+                      <h3>
+                        4. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?
+                      </h3>
+
+                      <p>In Short: Yes, we may.</p>
+
+                      <p>
+                        We may use cookies and similar tracking technologies
+                        (like web beacons and pixels) to access or store
+                        information. Some cookies are necessary to run the
+                        platform. For all optional cookies, you will have the
+                        option to give or withhold consent for us to access or
+                        store information through those cookies.
+                      </p>
+
+                      <h3>5. HOW LONG DO WE KEEP YOUR INFORMATION?</h3>
+
+                      <p>
+                        In Short: We keep your information for as long as
+                        necessary to fulfill the purposes outlined in this
+                        privacy policy unless otherwise required by law.
+                      </p>
+
+                      <p>
+                        We will only keep your personal information for as long
+                        as it is necessary for the purposes set out in this
+                        privacy policy, unless a longer retention period is
+                        required or permitted by law (such as tax, accounting or
+                        other legal requirements). No purpose in this policy
+                        will require us keeping your personal information for
+                        longer than 90 days past the termination of the
+                        user&rsquo;s account.
+                      </p>
+
+                      <p>
+                        When we have no ongoing legitimate business need to
+                        process your personal information, we will either delete
+                        or anonymize it, or, if this is not possible (for
+                        example, because your personal information has been
+                        stored in backup archives), then we will securely store
+                        your personal information and isolate it from any
+                        further processing until deletion is possible.
+                      </p>
+
+                      <h3>6. HOW DO WE KEEP YOUR INFORMATION SAFE?</h3>
+
+                      <p>
+                        In Short: We aim to protect your personal information
+                        through a system of organizational and technical
+                        security measures.
+                      </p>
+
+                      <p>
+                        We have implemented appropriate technical and
+                        organizational security measures designed to protect the
+                        security of any personal information we process.
+                        However, please also remember that we cannot guarantee
+                        that the internet itself is 100% secure. Although we
+                        will do our best to protect your personal information,
+                        the transmission of personal information to and from our
+                        Services is at your own risk. You should only access the
+                        services within a secure environment.
+                      </p>
+
+                      <h3>7. DO WE COLLECT INFORMATION FROM MINORS?</h3>
+
+                      <p>
+                        In Short: We do not knowingly collect data from or
+                        market to children under 18 years of age.
+                      </p>
+
+                      <p>
+                        We do not knowingly solicit data from or market to
+                        children under 18 years of age. By using the Services,
+                        you represent that you are at least 18 or that you are
+                        the parent or guardian of such a minor and consent to
+                        such minor dependent&rsquo;s use of the Services. If we
+                        learn that personal information from users less than 18
+                        years of age has been collected, we will deactivate the
+                        account and take reasonable measures to promptly delete
+                        such data from our records. If you become aware of any
+                        data we have collected from children under age 18,
+                        please contact us at support@alx.app.
+                      </p>
+
+                      <h3>8. WHAT ARE YOUR PRIVACY RIGHTS?</h3>
+
+                      <p>
+                        In Short: You may review, change, or terminate your
+                        account at any time.
+                      </p>
+
+                      <p>
+                        If you are resident in the European Economic Area and
+                        you believe we are unlawfully processing your personal
+                        information, you also have the right to complain to your
+                        local data protection supervisory authority. You can
+                        find their contact details here:
+                        http://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm
+                        .
+                      </p>
+
+                      <p>
+                        If you have questions or comments about your privacy
+                        rights, you may email us at support@alx.app
+                      </p>
+
+                      <p><strong>Account Information</strong></p>
+
+                      <p>
+                        If you would at any time like to review or change the
+                        information in your account or terminate your account,
+                        you can:
+                      </p>
+
+                      <p>Contact us using the contact information provided.</p>
+
+                      <p>
+                        Log into your account settings and update your user
+                        account.
+                      </p>
+
+                      <p>
+                        Upon your request to terminate your account, we will
+                        deactivate or delete your account and information from
+                        our active databases. However, some information may be
+                        retained in our files to prevent fraud, troubleshoot
+                        problems, assist with any investigations, enforce our
+                        Terms of Use and/or comply with legal requirements.
+                      </p>
+
+                      <p>
+                        Cookies and similar technologies: Most Web browsers are
+                        set to accept cookies by default. If you prefer, you can
+                        usually choose to set your browser to remove cookies and
+                        to reject cookies. If you choose to remove cookies or
+                        reject cookies, this could affect certain features or
+                        services of our Services. To opt-out of interest-based
+                        advertising by advertisers on our Services visit
+                        http://www.aboutads.info/choices/.
+                      </p>
+
+                      <h3>9. CONTROLS FOR DO-NOT-TRACK FEATURES</h3>
+
+                      <p>
+                        Most web browsers and some mobile operating systems and
+                        mobile applications include a Do-Not-Track
+                        (&ldquo;DNT&rdquo;) feature or setting you can activate
+                        to signal your privacy preference not to have data about
+                        your online browsing activities monitored and collected.
+                        No uniform technology standard for recognizing and
+                        implementing DNT signals has been finalized. As such, we
+                        do not currently respond to DNT browser signals or any
+                        other mechanism that automatically communicates your
+                        choice not to be tracked online. If a standard for
+                        online tracking is adopted that we must follow in the
+                        future, we will inform you about that practice in a
+                        revised version of this privacy policy.
+                      </p>
+
+                      <h3>
+                        10. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY
+                        RIGHTS?
+                      </h3>
+
+                      <p>
+                        In Short: Yes, if you are a resident of California, you
+                        are granted specific rights regarding access to your
+                        personal information.
+                      </p>
+
+                      <p>
+                        California Civil Code Section 1798.83, also known as the
+                        &ldquo;Shine The Light&rdquo; law, permits our users who
+                        are California residents to request and obtain from us,
+                        once a year and free of charge, information about
+                        categories of personal information (if any) we disclosed
+                        to third parties for direct marketing purposes and the
+                        names and addresses of all third parties with which we
+                        shared personal information in the immediately preceding
+                        calendar year. If you are a California resident and
+                        would like to make such a request, please submit your
+                        request in writing to us using the contact information
+                        provided below.
+                      </p>
+
+                      <p>
+                        If you are under 18 years of age, reside in California,
+                        and have a registered account with the Services, you
+                        have the right to request removal of unwanted data that
+                        you publicly post on the Services. To request removal of
+                        such data, please contact us using the contact
+                        information provided below, and include the email
+                        address associated with your account and a statement
+                        that you reside in California. We will make sure the
+                        data is not publicly displayed on the Services, but
+                        please be aware that the data may not be completely or
+                        comprehensively removed from our systems.
+                      </p>
+
+                      <h3>11. DO WE MAKE UPDATES TO THIS POLICY?</h3>
+
+                      <p>
+                        In Short: Yes, we will update this policy as necessary
+                        to stay compliant with relevant laws.
+                      </p>
+
+                      <p>
+                        We may update this privacy policy from time to time. The
+                        updated version will be indicated by an updated
+                        &ldquo;Revised&rdquo; date and the updated version will
+                        be effective as soon as it is accessible. If we make
+                        material changes to this privacy policy, we may notify
+                        you either by prominently posting a notice of such
+                        changes or by directly sending you a notification. We
+                        encourage you to review this privacy policy frequently
+                        to be informed of how we are protecting your
+                        information.
+                      </p>
+
+                      <h3>12. HOW CAN YOU CONTACT US ABOUT THIS POLICY?</h3>
+
+                      <p>
+                        If you have questions or comments about this policy, you
+                        may email us at support@alx.app or by post to:
+                      </p>
+
+                      <p>
+                        African Leadership International Attn: Legal Department
+                        Ref: Privacy Policy and User Agreement
+                      </p>
+
+                      <p>6th Floor, Tower A 1 Cybercity Ebene Mauritius</p>
+
+                      <p>
+                        HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE
+                        COLLECT FROM YOU?
+                      </p>
+
+                      <p>
+                        Based on the laws of some countries, you may have the
+                        right to request access to the personal information we
+                        collect from you, change that information, or delete it
+                        in some circumstances. To request to review, update, or
+                        delete your personal information, please send an email
+                        with full details of your request to support@alx.app. We
+                        will respond to your request within 30 days.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-default"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="gap" />
+
+          <h2 class="gap">Social presence</h2>
+
+          <div class="gap">
+            <div class="form-group">
+              <label
+                class="col-sm-2 control-label mandatory"
+                for="user_github_username"
+                >Github username</label
+              >
+              <div class="col-sm-10">
+                <input
+                  class="form-control"
+                  maxlength="255"
+                  size="255"
+                  type="text"
+                  value="pasej5"
+                  name="user[github_username]"
+                  id="user_github_username"
+                />
+                <p class="help-block">
+                  To perform most of the projects you will need to make your
+                  code available on GitHub. If you don't have an account yet,
+                  <a href="https://github.com" rel="noreferrer" target="_blank"
+                    >create one for free!</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="user_twitter_username"
+                >Twitter username</label
+              >
+              <div class="col-sm-10">
+                <input
+                  class="form-control"
+                  maxlength="255"
+                  size="255"
+                  type="text"
+                  value="MatsikaJay"
+                  name="user[twitter_username]"
+                  id="user_twitter_username"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="user_linkedin_url"
+                >LinkedIn URL</label
+              >
+              <div class="col-sm-10">
+                <input
+                  class="form-control"
+                  maxlength="255"
+                  size="255"
+                  type="text"
+                  value="https://www.linkedin.com/in/jealous-matsikachando-3b5254180/"
+                  name="user[linkedin_url]"
+                  id="user_linkedin_url"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="user_resume_url"
+                >Resume URL (PDF format, 1 page)</label
+              >
+              <div class="col-sm-10">
+                <input
+                  class="form-control"
+                  maxlength="512"
+                  size="512"
+                  type="text"
+                  value=""
+                  name="user[resume_url]"
+                  id="user_resume_url"
+                />
+              </div>
+            </div>
+          </div>
+
+          <hr class="gap" />
+
+          <h2 class="gap">Technical information</h2>
+
+          <div class="form-group gap">
+            <label class="col-sm-2 control-label" for="user_ssh_public_key"
+              >SSH public key</label
+            >
+            <div class="col-sm-10">
+              <input
+                class="form-control"
+                type="text"
+                value="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDcU/JbJcHrUGCDLLYVgNABuUOCXhLzwm71MtNU9w2tw7QiOhcuX3SE/aYLLgg1uG5A5/9VEDNvpH7CnVuxkEZQTwAabFF8xnJFygQyuOWA0Ta9lUQGsxzZqGqIMDG37xDA5bDduEUD96JFnQ5vMHgueMQoqm1mo1JJ9tv3vqDr5y0iZaN0QLvwkCc9XL9oqiLtDhP7TsUVR3YLnZONQ0b+3ytimnZEOA+FBR+/FvpWrMjRuh7whr5nrehXxUHLsPItDmpG4DZxQSEG27utyVWs3Y6UMDfr6ablJfhDGajUTQ0Dz6hFhBzI+7WmTHp5hl7Uo4/ciNOoDXlh+c5xQWBIuQdCGLQ4J1Zafq4qNHVpcwpIydYG965ZyOMZWD6LL3XfHMPpxwe0MybGG7rnpTNLBmxHsjoNgcNTew+O83ECEDOD2tmuyzXPpIAiFTZyhXZwDwtByq0YSD/s+jq1aV0/y1hdezUfnuc2o8aCheap8lxu0ISj2WVLqdr8dcxKqCdxuxquA7CKtNNJc42dhBLV2rNRqfeZuGMBLYv+rwigq/DlygRv6wS8ggZ9N+rwMdvexqFvkNsnjWJAWVtRy5o3GA8FbCLuEjXdh3BUkAvIGpNGa4tJrs/Z5wsWM0+FYJ1O8TnICIQpQRJZKPsGx/fLlCd9rVDzlulbMJca3e+QRw== root@7320a08c48ea"
+                name="user[ssh_public_key]"
+                id="user_ssh_public_key"
+              />
+            </div>
+          </div>
+
+          <div class="form-group gap">
+            <label class="col-sm-2 control-label" for="user_project_website_url"
+              >Project website url</label
+            >
+            <div class="col-sm-10">
+              <input
+                class="form-control"
+                maxlength="255"
+                size="255"
+                type="text"
+                value="DevMat.tech"
+                name="user[project_website_url]"
+                id="user_project_website_url"
+              />
+            </div>
+          </div>
+
+          <div class="form-group gap">
+            <label class="col-sm-2 control-label" for="user_datadog_api_key"
+              >Datadog api key</label
+            >
+            <div class="col-sm-10">
+              <input
+                class="form-control"
+                maxlength="255"
+                size="255"
+                type="text"
+                value="b9a063ce3f78b74e91f4c5e637aa55f4"
+                name="user[datadog_api_key]"
+                id="user_datadog_api_key"
+              />
+            </div>
+          </div>
+
+          <div class="form-group gap">
+            <label
+              class="col-sm-2 control-label"
+              for="user_datadog_application_key"
+              >Datadog application key</label
+            >
+            <div class="col-sm-10">
+              <input
+                class="form-control"
+                maxlength="255"
+                size="255"
+                type="text"
+                value="92401963a6345ca99286ec5dec743cf783670dfe"
+                name="user[datadog_application_key]"
+                id="user_datadog_application_key"
+              />
+            </div>
+          </div>
+
+          <hr class="gap" />
+
+          <h2 class="gap">Working Status</h2>
+
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="user_Inform the staff"
+              >Inform the staff</label
+            >
+            <div class="col-sm-10">
+              <a class="btn btn-default" href="/user_working_statuses/new"
+                >🎉I Got a Job! 🎉</a
+              >
+            </div>
+          </div>
+
+          <hr class="gap" />
+
+          <h2 class="gap">Deferment</h2>
+
+          <div class="form-group">
+            <div class="col-sm-10 col-sm-offset-2">
+              <p>
+                Falling behind? In need of a break? Or simply willing to get
+                your head around a topic you recently learned?
+              </p>
+              <p>
+                Please request a deferment to a future cohort by clicking
+                <a href="/user_transfer_requests/new">here</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="form-group gap submit-file">
+            <div class="col-sm-offset-2 col-sm-10">
+              <input
+                type="submit"
+                name="commit"
+                value="Save my information"
+                class="btn btn-primary"
+                data-disable-with="Save my information"
+              />
+              <p class="gap text-danger alert-msg"></p>
+            </div>
+          </div>
+        </form>
+
+        <p class="text-right">
+          <a
+            class="btn btn-default"
+            rel="nofollow"
+            data-method="delete"
+            href="/auth/sign_out"
+            ><i aria-hidden="true" class="fa-solid fa-power-off"></i
+            ><span>Log out</span></a
+          >
+        </p>
+      </article>
+
+      <div class="copyright">Copyright © 2024 ALX, All rights reserved.</div>
+    </main>
+
+    <button
+      class="btn btn-primary atop-help"
+      id="search-button"
+      data-search-active="false"
+      data-toggle="modal"
+      data-target="#search-modal"
+    >
+      <i aria-hidden="true" class="fa-solid fa-magnifying-glass"></i>
+      <i aria-hidden="true" class="fa-solid fa-window-minimize"></i>
+    </button>
+
+    <div
+      class="modal fade"
+      id="search-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="search-modal-label"
+    >
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div id="search-bar-container">
+              <input
+                id="search-bar"
+                autocomplete="off"
+                type="text"
+                name="hbtn-search-bar"
+                placeholder="✨Start search by typing in this field✨"
+              />
+            </div>
+          </div>
+          <div class="modal-body">
+            <div id="modal-spinner" class="spinner gap">
+              <div class="bounce1"></div>
+              <div class="bounce2"></div>
+              <div class="bounce3"></div>
+            </div>
+            <div id="search-results-container"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="markdownGuideModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="markdownGuideModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">Markdown Guide</h4>
+          </div>
+          <div class="modal-body">
+            <h4>Emphasis</h4>
+            <pre>
+**<strong>bold</strong>**
+*<em>italics</em>*
+~~<strike>strikethrough</strike>~~</pre
+            >
+            <h4>Headers</h4>
+            <pre>
+# Big header
+## Medium header
+### Small header
+#### Tiny header</pre
+            >
+            <h4>Lists</h4>
+            <pre>
+* Generic list item
+* Generic list item
+* Generic list item
+
+1. Numbered list item
+2. Numbered list item
+3. Numbered list item</pre
+            >
+            <h4>Links</h4>
+            <pre>[Text to display](http://www.example.com)</pre>
+            <h4>Quotes</h4>
+            <pre>
+> This is a quote.
+> It can span multiple lines!</pre
+            >
+            <h4>Images</h4>
+            <p>CSS style available: <code>width, height, opacity</code></p>
+            <pre>
+![](http://www.example.com/image.jpg)
+![](http://www.example.com/image.jpg | width: 200px)
+![](http://www.example.com/image.jpg | height: 124px | width: 80px | opacity: 0.6)
+</pre
+            >
+            <h4>Tables</h4>
+            <pre>| Column 1 | Column 2 | Column 3 |
+| -------- | -------- | -------- |
+| John     | Doe      | Male     |
+| Mary     | Smith    | Female   |
+
+<em>Or without aligning the columns...</em>
+
+| Column 1 | Column 2 | Column 3 |
+| -------- | -------- | -------- |
+| John | Doe | Male |
+| Mary | Smith | Female |
+</pre>
+            <h4>Displaying code</h4>
+            <pre>`var example = "hello!";`
+
+<em>Or spanning multiple lines...</em>
+
+```
+var example = "hello!";
+alert(example);
+```</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script id="cody-snippet">
+      window.codySettings = {
+        widget_id: '9b733b82-6921-495f-a618-9c46c40be7f6',
+      };
+      !(function () {
+        var t = window,
+          e = document,
+          a = function () {
+            var t = e.createElement('script');
+            (t.type = 'text/javascript'),
+              (t.async = !0),
+              (t.src = 'https://trinketsofcody.com/cody-widget.js');
+            var a = e.getElementsByTagName('script')[0];
+            a.parentNode.insertBefore(t, a);
+          };
+        'complete' === document.readyState
+          ? a()
+          : t.attachEvent
+          ? t.attachEvent('onload', a)
+          : t.addEventListener('load', a, !1);
+      })();
+    </script>
+  </body>
+</html>
