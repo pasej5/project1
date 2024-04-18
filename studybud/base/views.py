@@ -17,6 +17,7 @@ from .forms import RoomForm
 # ]
 
 def loginPage(request):
+    page = 'login'
     if request.user.is_authenticated:
         return redirect('home')
     
@@ -28,6 +29,7 @@ def loginPage(request):
             user = User.objects.get(username=username)
         except:
             messages.error(request, "User does not exists.")
+        return redirect('login')
         
         user = authenticate(request, username=username, password=password)
         if user is not None:
@@ -39,19 +41,23 @@ def loginPage(request):
             
 
     
-    context = {}
+    context = {page: 'page'}
     return render(request, 'base/login_register.html', context)
 
 def logoutUser(request):
     logout(request)
     return redirect('home')
-    
+
+def registerPage(request):
+    page = 'register'
+    return render (request, 'base/login_register.html')
 
 def home(request):
     q = request.GET.get('q') if request.GET.get('q') != None else ''
     print(q)
     rooms = Room.objects.filter(
         Q(topic__name__icontains=q) |
+        Q(name__icontains=q) |
         Q(decription__icontains=q)
     )
     topics = Topic.objects.all()
