@@ -23,8 +23,10 @@
     <h5>{{room_count}} rooms available</h5>
     <a href="{% url 'create-room' %}">Create Room</a>
     <div>
-      {% for room in rooms %} {% if request.user != room.host %}
+      {% for room in rooms %}
       <div>
+        {% if request.user == room.host %}
+
         <a href="{% url 'update-room' room.id %}">Edit</a>
         <a href="{% url 'delete-room' room.id %}">Delete</a>
         {% endif %}
