@@ -1,4 +1,23 @@
 {% extends 'main.html' %} {% block content %}
 <h1>{{room.name}}</h1>
+<p>{{room.decription}}</p>
 
-{% endblock content %}
+<div class="comment-wrapper">
+  <h3>Conversation</h3>
+  <hr />
+  {% for messages in room_messages %}
+  <div>
+    <small>@{{message.user}} {{message.created|timesince}} ago</small>
+    <p>{{message.body}}</p>
+  </div>
+  {% endfor %}
+</div>
+
+{% if request.user.is_authenticated %}
+<div class="comment-form">
+  <form method="POST" action="">
+    {% csrf_token %}
+    <input type="text" name="body" placeholder="write your message..." />
+  </form>
+</div>
+{% endif %} {% endblock content %}
