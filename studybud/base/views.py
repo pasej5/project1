@@ -100,9 +100,12 @@ def room(request, pk):
     context = {'room': room, 'room_messages': room_messages, 'participants': participants}
     return render(request, 'base/room.html', context)
 
-def userProfile(request):
-    
-    context = {}
+def userProfile(request, pk):
+    user = User.objects.get(id=pk)
+    rooms = user.room_set.all()
+    room_message = user.message_set.all()
+    topics = Topic.objects.all()
+    context = {'user': user, 'rooms': rooms, 'room_message': room_message}
     return render(request, 'base/profile.html', context)
 
 @login_required(login_url='/login')
